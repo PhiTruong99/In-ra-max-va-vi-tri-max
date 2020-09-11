@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>In ra max và vị trí max</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <script>
+            //Viết chương trình khởi tạo mảng số nguyên gồm 10 phần tử khác nhau
+            //Chương trình hiển thị ra được phần tử có giá trị lớn nhất trong mảng và vị trí của phần tử đó
+            //nhập vào mảng tìm ra max và in ra vị trí của max
+            var n = parseInt(prompt("Nhập vào n số phần từ của mảng : "));
+            var numbers =[];
+            for ( var i=0;i<n;i++){
+                numbers[i] = parseInt(prompt("Nhập vào phần tử thứ "+i));
+            }
+            let max = numbers[0];
+            for (var i=0;i<numbers.length;i++){
+                if(max < numbers[i]){
+                    max = numbers[i];
+                }
+            }
+            document.write("max = "+max+" ở vị trí "+i);
+        </script>
+    </body>
+</html>
